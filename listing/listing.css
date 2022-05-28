@@ -1,0 +1,337 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+del {
+  color: rgb(224, 21, 122);
+  font-weight: bold;
+}
+
+.navbarStyle {
+  background-color: rgb(224, 21, 122);
+}
+
+.navbarStyle button:hover {
+  background-color: rgb(224, 21, 122);
+  border: rgb(224, 21, 122);
+}
+
+.navbarStyle a {
+  color: white;
+}
+
+.navbarStyle .nav-link {
+  font-size: 30px;
+}
+
+/*dropdownnav*/
+.dropdownnav a {
+  color: grey;
+}
+
+.removeClick {
+  pointer-events: none; /*makes link unclickable*/
+}
+
+.dropitem a:hover {
+  background-color: rgb(224, 21, 122);
+  color: white;
+}
+
+.navbar-nav li > ul.dropdown-menu {
+  display: none;
+}
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.dropend > .dropdown-menu {
+  position: relative;
+  top: -6px;
+  left: 100%;
+}
+
+/*main slider*/
+.MainSlider {
+  height: 400px;
+  margin-bottom: 5%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*filter Sort Buttons*/
+.filterSortButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filterSortButtons button {
+  background-color: rgb(224, 21, 122);
+  color: white;
+}
+
+.SortDiv button {
+  width: 100%;
+  background-color: #f9bcdd;
+  color: rgb(224, 21, 122);
+}
+
+/*filter*/
+.counterItems {
+  color: grey;
+}
+
+.FilterSub {
+  margin-bottom: 6%;
+}
+.colorPick {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 2%;
+}
+
+.colorBox {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.BrandBox {
+  margin-bottom: 2%;
+}
+
+/*QuickView*/
+.QuickViewFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContainer {
+  max-width: 50%;
+}
+
+.imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.QuickViewFlexPricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonFlex,
+.addSubFlex {
+  display: flex;
+  flex-direction: row;
+  /* color: white; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.liker {
+  background-color: rgb(224, 21, 122);
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+.liker a {
+  color: white;
+}
+
+.liker a:hover {
+  color: grey;
+}
+
+.buttonFlex span {
+  background-color: rgb(224, 21, 122);
+  font-size: 25px;
+}
+
+.buttonFlex button {
+  background-color: rgb(224, 21, 122);
+}
+
+.buyButton {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+  font-size: 25px;
+  margin-left: 10%;
+}
+
+/*itemFlex*/
+.itemFlex {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 10%;
+}
+
+.itemFlexItem {
+  height: 450px;
+  width: 25%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.imageFlexInner {
+  height: 300px;
+  position: relative;
+}
+
+.imageFlexInner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.likeQuickFlexInner {
+  display: none;
+}
+
+.itemFlexItem:hover .likeQuickFlexInner {
+  display: block;
+  position: absolute;
+  background-color: rgb(224, 21, 122);
+  font-size: 20px;
+  top: 2%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.likeQuickFlexInner a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.likeQuickFlexInner a:hover {
+  color: grey;
+}
+
+.detailInner {
+  display: none;
+}
+
+.likeQuickFlexInner a:hover .detailInner {
+  display: block;
+  position: absolute;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-size: 15px;
+  right: 110%;
+}
+
+.cartaddingInner {
+  display: none;
+}
+
+.itemFlexItem:hover .cartaddingInner {
+  position: absolute;
+  background-color: rgb(224, 21, 122);
+  color: white;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 14%;
+  align-items: center;
+}
+
+.cartaddingInner a {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+}
+
+.contentFlexInner {
+  color: white;
+  text-align: center;
+}
+
+.contentFlexInner del {
+  color: rgb(224, 21, 122);
+  font-weight: bold;
+}
+
+.contentFlexInner div {
+  margin-bottom: 20px;
+}
+
+/*bottom desc banner*/
+.bottomdesc {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(224, 21, 122);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.bottomdescFlexItem {
+  width: 20%;
+  color: grey;
+}
+.bottomdescFlexItem a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  line-height: 40px;
+}
+.bottomdescFlexItem a:hover {
+  color: grey;
+}
+.contactForm {
+  height: 400px;
+  width: 35%;
+  background-color: #f9bcdd;
+  border-radius: 20px;
+}
+
+/*footer*/
+footer {
+  height: 70px;
+  background-color: rgb(224, 21, 122);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  line-height: 70px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: grey;
+  font-size: 20px;
+}
