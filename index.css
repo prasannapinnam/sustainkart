@@ -7,8 +7,24 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: white;
+  --secondary-color: grey;
+  --ternary-color: rgb(224, 21, 122);
+}
+
+.darkTheme {
+  --primary-color: black;
+  --secondary-color: white;
+  --ternary-color: black;
+}
+
+body {
+  background: var(--primary-color) !important;
+}
+
 .navbarStyle {
-  background-color: rgb(224, 21, 122);
+  background-color: var(--ternary-color);
 }
 
 .navbarStyle button:hover {
@@ -56,6 +72,18 @@
   height: 400px;
   margin-bottom: 5%;
 }
+
+.summerSale {
+  top: 30% !important;
+  left: -37% !important;
+}
+
+.summerSale h2 {
+  color: grey;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
 /*projects*/
 .projects {
   width: 90%;
@@ -72,7 +100,7 @@
   font-family: "Oleo Script", cursive;
   font-size: 35px;
   margin: 15% 0% 0% 0%;
-  color: grey;
+  color: var(--secondary-color);
 }
 
 .projectdesc p {
@@ -385,7 +413,7 @@
 }
 
 .flexDesc p {
-  color: grey;
+  color: var(--secondary-color);
 }
 
 .trendingProdFlex {
@@ -437,7 +465,7 @@
 .bottomdesc {
   height: 500px;
   width: 100%;
-  background-color: rgb(224, 21, 122);
+  background-color: var(--ternary-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -446,7 +474,7 @@
 
 .bottomdescFlexItem {
   width: 20%;
-  color: grey;
+  color: var(--secondary-color);
 }
 .bottomdescFlexItem a {
   color: white;
@@ -468,7 +496,7 @@
 /*footer*/
 footer {
   height: 70px;
-  background-color: rgb(224, 21, 122);
+  background-color: var(--ternary-color);
   color: white;
   display: flex;
   justify-content: space-around;

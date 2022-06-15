@@ -14,8 +14,29 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function changeMode(){
+        let icon = document.getElementById("modeIcon");
+        document.body.classList.toggle("darkTheme")
+
+        if(document.body.classList.contains("darkTheme")){
+          let i = document.createElement('i');
+          i.classList.add("bi", "bi-brightness-high-fill");
+          i.setAttribute("id","modeIcon");
+          i.style.color = "#FFFFFF";
+          icon.replaceWith(i) ;
+        }
+        else{
+          let i = document.createElement('i');
+          i.classList.add("bi", "bi-moon-fill");
+          i.setAttribute("id","modeIcon");
+          i.style.color = "#000000";
+          icon.replaceWith(i) ;
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body >
     <nav class="navbar navbar-expand navbarStyle">
       <div class="container-fluid">
         <a class="navbar-brand" style="color: white">Sustainkart</a>
@@ -55,6 +76,12 @@
                 ><i class="bi bi-person-circle"></i>
               </a>
             </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#" onclick="changeMode()" >
+                <i id="modeIcon" class="bi bi-moon-fill" style="color:black ;"></i>
+              </a>
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -99,7 +126,7 @@
                       aria-labelledby="clothingDropDown"
                     >
                       <li>
-                        <a class="dropdown-item" href="#">WOMEN</a>
+                        <a class="dropdown-item" href="./listing/listing.html">WOMEN</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">MEN</a>
@@ -354,10 +381,10 @@
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img src="./images/indexpage/sale.jpg"  alt="sale">
-          <div class="carousel-caption d-none d-md-block position-absolute" style="top:30%;left:-40%">
-            <h2 style="color:grey;font-size:40px;font-weight: bolder;"><i class="bi bi-gpu-card"></i> SUPER SUMMER SALE IS LIVE</h2>
+          <div class="carousel-caption d-none d-md-block position-absolute summerSale" >
+            <h2 ><i class="bi bi-gpu-card"></i>SUPER SUMMER SALE IS LIVE</h2>
             <div style="color:red;font-size:100px;font-weight: bold;">60% OFF</div>
-            <div style="color:red;font-size: large;font-weight: bold ;">120+ BRANDS & 3000+ PRODUCTS</div>
+            <span style="color:red;font-size: large;font-weight: bold ;">120+ BRANDS & 3000+ PRODUCTS</span>
           </div>
         </div>
       </div>
@@ -647,7 +674,7 @@
                   style="border-radius: 0px 20px 20px 0px"
                 />
               </figure>
-              <button class="btn btn-md ms-5">skin cravings <i class="bi bi-bag-heart"></i>
+              <button class="btn btn-md ms-2">skin cravings <i class="bi bi-bag-heart"></i>
               </button>
             </div>
           </div>

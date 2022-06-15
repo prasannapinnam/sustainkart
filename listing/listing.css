@@ -187,7 +187,7 @@ del {
 
 .itemFlexItem {
   height: 450px;
-  width: 25%;
+  /* width: 25%; */
   background-color: black;
   border-radius: 10px;
 }
